@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .div-1 ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: white;
+        }
+
+        .div-1 li a {
+            display: block;
+            color: black;
+            padding: 8px 16px;
+            text-decoration: none;
+            color: blue;
+            background-color: cyan;
+        }
+
+        .div-1 li a.active {
+            background-color: orange;
+            color: white;
+        }
+
+        .div-1 li a:hover:not(.active) {
+            background-color: gray;
+            color: white;
+        }
+
+        .div-2 ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: fit-content;
+            overflow: hidden;
+        }
+
+        .div-2 li {
+            float: left;
+        }
+
+        .div-2 li a {
+            display: block;
+            color: blue;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            background-color: lightgray;
+            border-right: 1px solid blue;
+        }
+
+        .div-2 li a:hover {
+            background-color: gray;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left-column {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .right-column {
+            flex: 1;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-column">
+            <strong style="padding: 20px;">Vertical Navigation Bar</strong>
+            <div class="div-1">
+                <ul style="border: 2px solid black; padding: 10px;">
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#news">Java</a></li>
+                    <li><a href="#contact">CSS</a></li>
+                    <li><a href="#about">HTML</a></li>
+                    <li><a href="#about">Bootstrap</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <strong style="padding: 20px;">Horizontal Navigation Bar</strong>
+            <div class="div-2">
+                <ul style="border: 2px solid black; padding: 10px;">
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#news">Java</a></li>
+                    <li><a href="#contact">CSS</a></li>
+                    <li><a href="#about">HTML</a></li>
+                    <li><a href="#about">Bootstrap</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

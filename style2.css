@@ -1,0 +1,23 @@
+.customers {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.customers td,
+.customers th {
+    border: 1px solid grey hidden;
+    padding: 10px;
+}
+
+.customers tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+.customers th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    background-color: rgb(25, 188, 96);
+    color: white;
+}
